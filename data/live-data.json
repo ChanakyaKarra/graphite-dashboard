@@ -11,16 +11,21 @@
   "elec_korea": 0.099,
   "cpc_china": 417.8,
   "needle_coke_china": 691.8,
-  "fx_eur_usd": 1.08,
-  "fx_cny_usd": 0.139,
-  "fx_inr_usd": 0.0118,
-  "fx_jpy_usd": 0.0067,
+  "fx_eur_usd": 1.1768,
+  "fx_cny_usd": 0.1469,
+  "fx_inr_usd": 0.0106,
+  "fx_jpy_usd": 0.00638,
+  "fx_gbp_usd": 1.3594,
+  "fx_krw_usd": 0.00068,
+  "fx_vnd_usd": 3.82e-05,
+  "fx_idr_usd": 5.76e-05,
   "_meta": {
-    "updated": "2026-05-11T02:20:19.403399+00:00",
-    "updated_unix": 1778466019,
-    "sources": [],
+    "updated": "2026-05-11T03:05:12.068897+00:00",
+    "updated_unix": 1778468712,
+    "sources": [
+      "ExchangeRate-API (FX)"
+    ],
     "errors": [
-      "ExchangeRate-API",
       "Elecz"
     ],
     "fetcher_version": "1.0.0"

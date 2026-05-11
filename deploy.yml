@@ -1,0 +1,58 @@
+name: Deploy dashboard to GitHub Pages
+
+# Deploys the dashboard whenever the HTML file or live data changes.
+# After first deploy, the dashboard will be live at:
+#   https://YOUR-USERNAME.github.io/REPO-NAME/
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # Manual trigger button
+  workflow_run:
+    workflows: ["Fetch live data and update dashboard"]
+    types: [completed]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Force any nested Node.js 20 actions to run on Node.js 24.
+# Most needed here because actions/upload-pages-artifact@v3 internally uses
+# upload-artifact@v4 (Node 20). Will be removable after upstream ships v4 of
+# upload-pages-artifact (tracked: actions/upload-pages-artifact#138).
+# Reference: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+# Only allow one deploy at a time
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload deployment artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Deploy the whole repo (index.html, data/, etc.)
+          path: '.'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

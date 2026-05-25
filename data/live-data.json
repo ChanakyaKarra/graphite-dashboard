@@ -20,8 +20,8 @@
   "fx_vnd_usd": 3.83e-05,
   "fx_idr_usd": 5.64e-05,
   "_meta": {
-    "updated": "2026-05-25T09:43:54.779102+00:00",
-    "updated_unix": 1779702234,
+    "updated": "2026-05-25T14:28:45.177797+00:00",
+    "updated_unix": 1779719325,
     "sources": [
       "ExchangeRate-API (FX)"
     ],

@@ -13,15 +13,15 @@
   "needle_coke_china": 691.8,
   "fx_eur_usd": 1.1511,
   "fx_cny_usd": 0.1478,
-  "fx_inr_usd": 0.0104,
-  "fx_jpy_usd": 0.00623,
-  "fx_gbp_usd": 1.3429,
-  "fx_krw_usd": 0.0007,
+  "fx_inr_usd": 0.0105,
+  "fx_jpy_usd": 0.00631,
+  "fx_gbp_usd": 1.3454,
+  "fx_krw_usd": 0.00069,
   "fx_vnd_usd": 3.82e-05,
-  "fx_idr_usd": 5.53e-05,
+  "fx_idr_usd": 5.54e-05,
   "_meta": {
-    "updated": "2026-07-31T19:03:19.787042+00:00",
-    "updated_unix": 1785524599,
+    "updated": "2026-08-01T01:28:06.959926+00:00",
+    "updated_unix": 1785547686,
     "sources": [
       "ExchangeRate-API (FX)"
     ],

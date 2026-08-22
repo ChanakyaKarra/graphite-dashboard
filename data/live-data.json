@@ -14,14 +14,14 @@
   "fx_eur_usd": 1.1682,
   "fx_cny_usd": 0.1484,
   "fx_inr_usd": 0.0104,
-  "fx_jpy_usd": 0.0063,
-  "fx_gbp_usd": 1.3634,
+  "fx_jpy_usd": 0.00629,
+  "fx_gbp_usd": 1.3637,
   "fx_krw_usd": 0.00072,
-  "fx_vnd_usd": 3.84e-05,
-  "fx_idr_usd": 5.63e-05,
+  "fx_vnd_usd": 3.85e-05,
+  "fx_idr_usd": 5.66e-05,
   "_meta": {
-    "updated": "2026-08-21T18:18:39.060330+00:00",
-    "updated_unix": 1787336319,
+    "updated": "2026-08-22T00:29:59.612673+00:00",
+    "updated_unix": 1787358599,
     "sources": [
       "ExchangeRate-API (FX)"
     ],

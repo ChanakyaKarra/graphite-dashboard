@@ -11,17 +11,17 @@
   "elec_korea": 0.099,
   "cpc_china": 417.8,
   "needle_coke_china": 691.8,
-  "fx_eur_usd": 1.123,
+  "fx_eur_usd": 1.1159,
   "fx_cny_usd": 0.1496,
   "fx_inr_usd": 0.0106,
-  "fx_jpy_usd": 0.00634,
-  "fx_gbp_usd": 1.346,
+  "fx_jpy_usd": 0.00631,
+  "fx_gbp_usd": 1.3374,
   "fx_krw_usd": 0.00074,
-  "fx_vnd_usd": 3.89e-05,
+  "fx_vnd_usd": 3.91e-05,
   "fx_idr_usd": 5.53e-05,
   "_meta": {
-    "updated": "2026-11-06T22:27:56.168078+00:00",
-    "updated_unix": 1794004076,
+    "updated": "2026-11-07T03:28:23.836681+00:00",
+    "updated_unix": 1794022103,
     "sources": [
       "ExchangeRate-API (FX)"
     ],
